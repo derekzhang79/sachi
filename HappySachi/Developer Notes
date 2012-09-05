@@ -1,0 +1,8 @@
+This program was written by Ben Boral in April 2012.
+Ben Boral contact: boralben@gmail.com
+www.boralapps.com
+This Developer Notes file is to make notes (for myself or others who may look at the project) on improvements that should be made.
+I know that there are far too many lines of code in the app. Sorry. Still learning.
+If I were able to spend some more time on the project to clean it up, the first thing I'd do is create a Master Class for all the ViewControllers. They all share some commom components like the mute button.
+Because I didn't write the program like that from the beginning, there is a significant amount of copy-paste programming here, and I'd like to eliminate that. 
+Another note is to crop audio files. There is significant "Dead Air" at the end of these files, which may cause confusion for the user.

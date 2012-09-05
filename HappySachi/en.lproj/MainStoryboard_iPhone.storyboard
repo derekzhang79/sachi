@@ -1,22 +1,185 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="jCK-xY-bFI">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development version="4300" defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--View Controller i Phone-->
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="ViewController_iPhone" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="84i-FB-Zat">
+                                <rect key="frame" x="248" y="423" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="d3W-Dh-VnG" kind="push" id="Nsk-qo-hz7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Dth-8I-NU8">
+                                <rect key="frame" x="20" y="422" width="18" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailInfoPopUp:" destination="2" eventType="touchUpInside" id="JQj-7h-Eq6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uG3-RH-PFX"/>
+                    <connections>
+                        <outlet property="startTheApp" destination="84i-FB-Zat" id="E3E-Zd-sug"/>
+                    </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="435" y="15"/>
+        </scene>
+        <!--Aum View Controller i Phone-->
+        <scene sceneID="SfV-Xv-uaL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHW-rt-Wea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="d3W-Dh-VnG" customClass="AumViewController_iPhone" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dSg-vd-o7i">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FvP-Vx-N8J">
+                                <rect key="frame" x="228" y="410" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="poQ-s5-ycq" kind="push" id="dH7-LP-154"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oNz-LD-yEs"/>
+                    <connections>
+                        <outlet property="goToColorsButton" destination="FvP-Vx-N8J" id="wcP-aZ-yGx"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="830" y="15"/>
+        </scene>
+        <!--Choose Color View Controller i Phone-->
+        <scene sceneID="C6x-i6-PRc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yH4-6L-DJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="poQ-s5-ycq" customClass="ChooseColorViewController_iPhone" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IgK-jV-sDu">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jVh-3p-SPc"/>
+                    <connections>
+                        <segue destination="DGd-Lw-3Uk" kind="push" identifier="ToAnimalPicker" id="81L-84-X3x"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1210" y="5"/>
+        </scene>
+        <!--Animal Picker View Controller i Phone-->
+        <scene sceneID="KW0-S0-Wer">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBB-Ym-5GE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="DGd-Lw-3Uk" customClass="AnimalPickerViewController_iPhone" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbZ-wg-ORQ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c9l-Nr-wrT"/>
+                    <connections>
+                        <segue destination="qmA-VS-OXr" kind="push" identifier="ToBe" id="cgR-Nx-a6O"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1584" y="4"/>
+        </scene>
+        <!--See View Controller i Phone-->
+        <scene sceneID="SRh-7V-S75">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCi-B9-Bsq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="qmA-VS-OXr" customClass="SeeViewController_iPhone" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZL7-YM-RxU">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hty-z5-dHK"/>
+                    <connections>
+                        <segue destination="Eqy-Wl-c3s" kind="push" identifier="ToBeReal" id="wNu-cZ-y7y"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2058" y="-889"/>
+        </scene>
+        <!--Be View Controller i Phone-->
+        <scene sceneID="pUY-3s-o3r">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwT-uq-fT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Eqy-Wl-c3s" customClass="BeViewController_iPhone" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="evT-U7-EEg">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yRJ-Qp-1Ls"/>
+                    <connections>
+                        <segue destination="qmA-VS-OXr" kind="push" identifier="ToStarfish" id="UPO-66-4ZB"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2474" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VMZ-MO-ZEh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZ9-zo-Q2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="jCK-xY-bFI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="OVI-do-BcT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="gwQ-86-nnf"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="34" y="5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -24,4 +187,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="cgR-Nx-a6O"/>
+    </inferredMetricsTieBreakers>
 </document>
